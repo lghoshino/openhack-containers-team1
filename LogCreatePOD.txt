@@ -1,0 +1,389 @@
+C:\Users\luish>kubectl create -f openhack-containers-team1/minecraft.yml --v=8
+I1025 12:06:34.072030   15236 loader.go:357] Config loaded from file C:\Users\luish/.kube/config
+I1025 12:06:34.099957   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/openapi/v2
+I1025 12:06:34.100291   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:34.100291   15236 round_trippers.go:394]     Accept: application/com.github.proto-openapi.spec.v2@v1.0+protobuf
+I1025 12:06:34.104531   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:34.104972   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:35.181561   15236 round_trippers.go:409] Response Status: 200 OK in 1075 milliseconds
+I1025 12:06:35.181561   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:35.184571   15236 round_trippers.go:415]     Accept-Ranges: bytes
+I1025 12:06:35.188674   15236 round_trippers.go:415]     X-Varied-Accept: application/com.github.proto-openapi.spec.v2@v1.0+protobuf
+I1025 12:06:35.189678   15236 round_trippers.go:415]     Content-Type: application/octet-stream
+I1025 12:06:35.191711   15236 round_trippers.go:415]     Etag: "7C4132D556069CF9A5C44C6E21E77A5A923A3794AE6BFDD51936FB3A82A7A298D40E81637939EB8DD7F6A977744ACECE0BDBD2152CFDCE6B3AB2519F7C21AC2F"
+I1025 12:06:35.195657   15236 round_trippers.go:415]     Last-Modified: Thu, 25 Oct 2018 15:06:10 GMT
+I1025 12:06:35.199643   15236 round_trippers.go:415]     Vary: Accept-Encoding
+I1025 12:06:35.200644   15236 round_trippers.go:415]     Vary: Accept
+I1025 12:06:35.201684   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:35 GMT
+I1025 12:06:36.243454   15236 request.go:872] Response Body:
+00000000  0a 03 32 2e 30 12 15 0a  0a 4b 75 62 65 72 6e 65  |..2.0....Kuberne|
+00000010  74 65 73 12 07 76 31 2e  31 31 2e 33 42 ec 89 6a  |tes..v1.11.3B..j|
+00000020  12 ca 02 0a 05 2f 61 70  69 2f 12 c0 02 12 bd 02  |...../api/......|
+00000030  0a 04 63 6f 72 65 1a 1a  67 65 74 20 61 76 61 69  |..core..get avai|
+00000040  6c 61 62 6c 65 20 41 50  49 20 76 65 72 73 69 6f  |lable API versio|
+00000050  6e 73 2a 12 67 65 74 43  6f 72 65 41 50 49 56 65  |ns*.getCoreAPIVe|
+00000060  72 73 69 6f 6e 73 32 10  61 70 70 6c 69 63 61 74  |rsions2.applicat|
+00000070  69 6f 6e 2f 6a 73 6f 6e  32 10 61 70 70 6c 69 63  |ion/json2.applic|
+00000080  61 74 69 6f 6e 2f 79 61  6d 6c 32 23 61 70 70 6c  |ation/yaml2#appl|
+00000090  69 63 61 74 69 6f 6e 2f  76 6e 64 2e 6b 75 62 65  |ication/vnd.kube|
+000000a0  72 6e 65 74 65 73 2e 70  72 6f 74 6f 62 75 66 3a  |rnetes.protobuf:|
+000000b0  10 61 70 70 6c 69 63 61  74 69 6f 6e 2f 6a 73 6f  |.application/jso|
+000000c0  6e 3a 10 61 70 70 6c 69  63 61 74 69 6f 6e 2f 79  |n:.application/ [truncated 11705582 chars]
+I1025 12:06:36.385640   15236 decoder.go:224] decoding stream as YAML
+I1025 12:06:36.410021   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/api
+I1025 12:06:36.410021   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:36.413971   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:36.417097   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:36.419037   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:36.556917   15236 round_trippers.go:409] Response Status: 200 OK in 136 milliseconds
+I1025 12:06:36.557934   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:36.560920   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:36.565007   15236 round_trippers.go:415]     Content-Length: 161
+I1025 12:06:36.566000   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:37 GMT
+I1025 12:06:36.570000   15236 request.go:874] Response Body: {"kind":"APIVersions","versions":["v1"],"serverAddressByClientCIDRs":[{"clientCIDR":"0.0.0.0/0","serverAddress":"\"team1-f86b34ad.hcp.eastus.azmk8s.io\":443"}]}
+I1025 12:06:36.600941   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis
+I1025 12:06:36.600941   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:36.603906   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:36.617069   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:36.620062   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:36.780279   15236 round_trippers.go:409] Response Status: 200 OK in 148 milliseconds
+I1025 12:06:36.781289   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:36.784276   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:36.788366   15236 round_trippers.go:415]     Content-Length: 3687
+I1025 12:06:36.789361   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:37 GMT
+I1025 12:06:36.794387   15236 request.go:874] Response Body: {"kind":"APIGroupList","apiVersion":"v1","groups":[{"name":"apiregistration.k8s.io","versions":[{"groupVersion":"apiregistration.k8s.io/v1","version":"v1"},{"groupVersion":"apiregistration.k8s.io/v1beta1","version":"v1beta1"}],"preferredVersion":{"groupVersion":"apiregistration.k8s.io/v1","version":"v1"}},{"name":"extensions","versions":[{"groupVersion":"extensions/v1beta1","version":"v1beta1"}],"preferredVersion":{"groupVersion":"extensions/v1beta1","version":"v1beta1"}},{"name":"apps","versions":[{"groupVersion":"apps/v1","version":"v1"},{"groupVersion":"apps/v1beta2","version":"v1beta2"},{"groupVersion":"apps/v1beta1","version":"v1beta1"}],"preferredVersion":{"groupVersion":"apps/v1","version":"v1"}},{"name":"events.k8s.io","versions":[{"groupVersion":"events.k8s.io/v1beta1","version":"v1beta1"}],"preferredVersion":{"groupVersion":"events.k8s.io/v1beta1","version":"v1beta1"}},{"name":"authentication.k8s.io","versions":[{"groupVersion":"authentication.k8s.io/v1","version":"v1"},{"groupVersion":"authenticati [truncated 2663 chars]
+I1025 12:06:36.811301   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/api/v1
+I1025 12:06:36.813337   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:36.817301   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:36.818281   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:36.820275   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:36.951363   15236 round_trippers.go:409] Response Status: 200 OK in 129 milliseconds
+I1025 12:06:36.951363   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:36.954358   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:36.958396   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:37 GMT
+I1025 12:06:36.964327   15236 request.go:874] Response Body: {"kind":"APIResourceList","groupVersion":"v1","resources":[{"name":"bindings","singularName":"","namespaced":true,"kind":"Binding","verbs":["create"]},{"name":"componentstatuses","singularName":"","namespaced":false,"kind":"ComponentStatus","verbs":["get","list"],"shortNames":["cs"]},{"name":"configmaps","singularName":"","namespaced":true,"kind":"ConfigMap","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["cm"]},{"name":"endpoints","singularName":"","namespaced":true,"kind":"Endpoints","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["ep"]},{"name":"events","singularName":"","namespaced":true,"kind":"Event","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["ev"]},{"name":"limitranges","singularName":"","namespaced":true,"kind":"LimitRange","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["limits"]},{"name":"names [truncated 4110 chars]
+I1025 12:06:36.979287   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/apiregistration.k8s.io/v1
+I1025 12:06:36.979287   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:36.984280   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:36.985276   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:36.987264   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:37.127889   15236 round_trippers.go:409] Response Status: 200 OK in 135 milliseconds
+I1025 12:06:37.127889   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:37.130900   15236 round_trippers.go:415]     Content-Length: 387
+I1025 12:06:37.135076   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:37 GMT
+I1025 12:06:37.136046   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:37.143037   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"apiregistration.k8s.io/v1","resources":[{"name":"apiservices","singularName":"","namespaced":false,"kind":"APIService","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"apiservices/status","singularName":"","namespaced":false,"kind":"APIService","verbs":["get","patch","update"]}]}
+I1025 12:06:37.169956   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/apiregistration.k8s.io/v1beta1
+I1025 12:06:37.171952   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:37.172951   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:37.183926   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:37.186909   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:37.329222   15236 round_trippers.go:409] Response Status: 200 OK in 130 milliseconds
+I1025 12:06:37.330171   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:37.333165   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:37.337156   15236 round_trippers.go:415]     Content-Length: 392
+I1025 12:06:37.339148   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:37 GMT
+I1025 12:06:37.345136   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"apiregistration.k8s.io/v1beta1","resources":[{"name":"apiservices","singularName":"","namespaced":false,"kind":"APIService","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"apiservices/status","singularName":"","namespaced":false,"kind":"APIService","verbs":["get","patch","update"]}]}
+I1025 12:06:37.364161   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/extensions/v1beta1
+I1025 12:06:37.364161   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:37.366077   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:37.369073   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:37.373058   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:37.510624   15236 round_trippers.go:409] Response Status: 200 OK in 135 milliseconds
+I1025 12:06:37.511640   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:37.514630   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:37.519674   15236 round_trippers.go:415]     Content-Length: 2340
+I1025 12:06:37.520671   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:38 GMT
+I1025 12:06:37.529676   15236 request.go:874] Response Body: {"kind":"APIResourceList","groupVersion":"extensions/v1beta1","resources":[{"name":"daemonsets","singularName":"","namespaced":true,"kind":"DaemonSet","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["ds"]},{"name":"daemonsets/status","singularName":"","namespaced":true,"kind":"DaemonSet","verbs":["get","patch","update"]},{"name":"deployments","singularName":"","namespaced":true,"kind":"Deployment","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["deploy"]},{"name":"deployments/rollback","singularName":"","namespaced":true,"kind":"DeploymentRollback","verbs":["create"]},{"name":"deployments/scale","singularName":"","namespaced":true,"group":"extensions","version":"v1beta1","kind":"Scale","verbs":["get","patch","update"]},{"name":"deployments/status","singularName":"","namespaced":true,"kind":"Deployment","verbs":["get","patch","update"]},{"name":"ingresses","singularName":"","namespaced":true,"kind":"Ingress"," [truncated 1316 chars]
+I1025 12:06:37.542607   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/apps/v1
+I1025 12:06:37.542607   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:37.544597   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:37.549589   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:37.554568   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:37.704034   15236 round_trippers.go:409] Response Status: 200 OK in 136 milliseconds
+I1025 12:06:37.704034   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:37.707073   15236 round_trippers.go:415]     Content-Length: 2016
+I1025 12:06:37.711057   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:38 GMT
+I1025 12:06:37.713006   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:37.718004   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"apps/v1","resources":[{"name":"controllerrevisions","singularName":"","namespaced":true,"kind":"ControllerRevision","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"daemonsets","singularName":"","namespaced":true,"kind":"DaemonSet","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["ds"],"categories":["all"]},{"name":"daemonsets/status","singularName":"","namespaced":true,"kind":"DaemonSet","verbs":["get","patch","update"]},{"name":"deployments","singularName":"","namespaced":true,"kind":"Deployment","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["deploy"],"categories":["all"]},{"name":"deployments/scale","singularName":"","namespaced":true,"group":"autoscaling","version":"v1","kind":"Scale","verbs":["get","patch","update"]},{"name":"deployments/status","singularName":"","namespaced":true,"kind":"Deployment [truncated 992 chars]
+I1025 12:06:37.731957   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/apps/v1beta2
+I1025 12:06:37.732958   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:37.736942   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:37.737940   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:37.738947   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:37.874902   15236 round_trippers.go:409] Response Status: 200 OK in 134 milliseconds
+I1025 12:06:37.874902   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:37.877912   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:37.881919   15236 round_trippers.go:415]     Content-Length: 2015
+I1025 12:06:37.883877   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:38 GMT
+I1025 12:06:37.889869   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"apps/v1beta2","resources":[{"name":"controllerrevisions","singularName":"","namespaced":true,"kind":"ControllerRevision","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"daemonsets","singularName":"","namespaced":true,"kind":"DaemonSet","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["ds"],"categories":["all"]},{"name":"daemonsets/status","singularName":"","namespaced":true,"kind":"DaemonSet","verbs":["get","patch","update"]},{"name":"deployments","singularName":"","namespaced":true,"kind":"Deployment","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["deploy"],"categories":["all"]},{"name":"deployments/scale","singularName":"","namespaced":true,"group":"apps","version":"v1beta2","kind":"Scale","verbs":["get","patch","update"]},{"name":"deployments/status","singularName":"","namespaced":true,"kind":"Deploym [truncated 991 chars]
+I1025 12:06:37.902824   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/apps/v1beta1
+I1025 12:06:37.903824   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:37.916792   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:37.919818   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:37.931785   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:38.070000   15236 round_trippers.go:409] Response Status: 200 OK in 134 milliseconds
+I1025 12:06:38.070000   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:38.075986   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:38.077979   15236 round_trippers.go:415]     Content-Length: 1338
+I1025 12:06:38.078977   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:38 GMT
+I1025 12:06:38.084961   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"apps/v1beta1","resources":[{"name":"controllerrevisions","singularName":"","namespaced":true,"kind":"ControllerRevision","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"deployments","singularName":"","namespaced":true,"kind":"Deployment","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["deploy"],"categories":["all"]},{"name":"deployments/rollback","singularName":"","namespaced":true,"kind":"DeploymentRollback","verbs":["create"]},{"name":"deployments/scale","singularName":"","namespaced":true,"group":"apps","version":"v1beta1","kind":"Scale","verbs":["get","patch","update"]},{"name":"deployments/status","singularName":"","namespaced":true,"kind":"Deployment","verbs":["get","patch","update"]},{"name":"statefulsets","singularName":"","namespaced":true,"kind":"StatefulSet","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]," [truncated 314 chars]
+I1025 12:06:38.098926   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/events.k8s.io/v1beta1
+I1025 12:06:38.101920   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:38.102910   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:38.103908   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:38.104906   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:38.239499   15236 round_trippers.go:409] Response Status: 200 OK in 134 milliseconds
+I1025 12:06:38.239499   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:38.242524   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:38 GMT
+I1025 12:06:38.246529   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:38.248477   15236 round_trippers.go:415]     Content-Length: 272
+I1025 12:06:38.253458   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"events.k8s.io/v1beta1","resources":[{"name":"events","singularName":"","namespaced":true,"kind":"Event","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["ev"]}]}
+I1025 12:06:38.267424   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/authentication.k8s.io/v1
+I1025 12:06:38.268427   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:38.270412   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:38.283149   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:38.285152   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:38.417749   15236 round_trippers.go:409] Response Status: 200 OK in 128 milliseconds
+I1025 12:06:38.418763   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:38.425849   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:38.426845   15236 round_trippers.go:415]     Content-Length: 202
+I1025 12:06:38.427843   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:38 GMT
+I1025 12:06:38.433828   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"authentication.k8s.io/v1","resources":[{"name":"tokenreviews","singularName":"","namespaced":false,"kind":"TokenReview","verbs":["create"]}]}
+I1025 12:06:38.448824   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/authentication.k8s.io/v1beta1
+I1025 12:06:38.448824   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:38.450784   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:38.454774   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:38.457815   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:38.593615   15236 round_trippers.go:409] Response Status: 200 OK in 134 milliseconds
+I1025 12:06:38.593615   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:38.597611   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:38.601632   15236 round_trippers.go:415]     Content-Length: 207
+I1025 12:06:38.602628   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:39 GMT
+I1025 12:06:38.608591   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"authentication.k8s.io/v1beta1","resources":[{"name":"tokenreviews","singularName":"","namespaced":false,"kind":"TokenReview","verbs":["create"]}]}
+I1025 12:06:38.624535   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/authorization.k8s.io/v1
+I1025 12:06:38.624535   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:38.626528   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:38.633507   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:38.637496   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:38.785638   15236 round_trippers.go:409] Response Status: 200 OK in 136 milliseconds
+I1025 12:06:38.786645   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:38.791689   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:38.793643   15236 round_trippers.go:415]     Content-Length: 591
+I1025 12:06:38.794626   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:39 GMT
+I1025 12:06:38.800608   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"authorization.k8s.io/v1","resources":[{"name":"localsubjectaccessreviews","singularName":"","namespaced":true,"kind":"LocalSubjectAccessReview","verbs":["create"]},{"name":"selfsubjectaccessreviews","singularName":"","namespaced":false,"kind":"SelfSubjectAccessReview","verbs":["create"]},{"name":"selfsubjectrulesreviews","singularName":"","namespaced":false,"kind":"SelfSubjectRulesReview","verbs":["create"]},{"name":"subjectaccessreviews","singularName":"","namespaced":false,"kind":"SubjectAccessReview","verbs":["create"]}]}
+I1025 12:06:38.814568   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/authorization.k8s.io/v1beta1
+I1025 12:06:38.814568   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:38.816563   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:38.819611   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:38.820551   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:38.951974   15236 round_trippers.go:409] Response Status: 200 OK in 130 milliseconds
+I1025 12:06:38.952887   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:38.958867   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:38.959902   15236 round_trippers.go:415]     Content-Length: 596
+I1025 12:06:38.961865   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:39 GMT
+I1025 12:06:38.966884   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"authorization.k8s.io/v1beta1","resources":[{"name":"localsubjectaccessreviews","singularName":"","namespaced":true,"kind":"LocalSubjectAccessReview","verbs":["create"]},{"name":"selfsubjectaccessreviews","singularName":"","namespaced":false,"kind":"SelfSubjectAccessReview","verbs":["create"]},{"name":"selfsubjectrulesreviews","singularName":"","namespaced":false,"kind":"SelfSubjectRulesReview","verbs":["create"]},{"name":"subjectaccessreviews","singularName":"","namespaced":false,"kind":"SubjectAccessReview","verbs":["create"]}]}
+I1025 12:06:38.980813   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/autoscaling/v1
+I1025 12:06:38.980813   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:38.982807   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:38.985949   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:38.987891   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:39.130526   15236 round_trippers.go:409] Response Status: 200 OK in 140 milliseconds
+I1025 12:06:39.130526   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:39.133519   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:39.138510   15236 round_trippers.go:415]     Content-Length: 468
+I1025 12:06:39.139500   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:39 GMT
+I1025 12:06:39.153461   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"autoscaling/v1","resources":[{"name":"horizontalpodautoscalers","singularName":"","namespaced":true,"kind":"HorizontalPodAutoscaler","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["hpa"],"categories":["all"]},{"name":"horizontalpodautoscalers/status","singularName":"","namespaced":true,"kind":"HorizontalPodAutoscaler","verbs":["get","patch","update"]}]}
+I1025 12:06:39.166464   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/autoscaling/v2beta1
+I1025 12:06:39.166464   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:39.168427   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:39.172412   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:39.173407   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:39.314290   15236 round_trippers.go:409] Response Status: 200 OK in 128 milliseconds
+I1025 12:06:39.314290   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:39.317288   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:39.321268   15236 round_trippers.go:415]     Content-Length: 473
+I1025 12:06:39.323270   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:39 GMT
+I1025 12:06:39.328260   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"autoscaling/v2beta1","resources":[{"name":"horizontalpodautoscalers","singularName":"","namespaced":true,"kind":"HorizontalPodAutoscaler","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["hpa"],"categories":["all"]},{"name":"horizontalpodautoscalers/status","singularName":"","namespaced":true,"kind":"HorizontalPodAutoscaler","verbs":["get","patch","update"]}]}
+I1025 12:06:39.348235   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/batch/v1
+I1025 12:06:39.348235   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:39.349200   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:39.354189   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:39.356175   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:39.495333   15236 round_trippers.go:409] Response Status: 200 OK in 134 milliseconds
+I1025 12:06:39.495333   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:39.498330   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:39.502438   15236 round_trippers.go:415]     Content-Length: 361
+I1025 12:06:39.504427   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:40 GMT
+I1025 12:06:39.511412   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"batch/v1","resources":[{"name":"jobs","singularName":"","namespaced":true,"kind":"Job","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"categories":["all"]},{"name":"jobs/status","singularName":"","namespaced":true,"kind":"Job","verbs":["get","patch","update"]}]}
+I1025 12:06:39.523392   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/batch/v1beta1
+I1025 12:06:39.523392   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:39.533350   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:39.537340   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:39.549308   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:39.684964   15236 round_trippers.go:409] Response Status: 200 OK in 131 milliseconds
+I1025 12:06:39.684964   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:39.686967   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:39.691129   15236 round_trippers.go:415]     Content-Length: 402
+I1025 12:06:39.692078   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:40 GMT
+I1025 12:06:39.694075   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"batch/v1beta1","resources":[{"name":"cronjobs","singularName":"","namespaced":true,"kind":"CronJob","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["cj"],"categories":["all"]},{"name":"cronjobs/status","singularName":"","namespaced":true,"kind":"CronJob","verbs":["get","patch","update"]}]}
+I1025 12:06:39.701061   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/certificates.k8s.io/v1beta1
+I1025 12:06:39.701061   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:39.702054   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:39.702054   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:39.703049   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:39.842808   15236 round_trippers.go:409] Response Status: 200 OK in 138 milliseconds
+I1025 12:06:39.843818   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:39.846808   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:39.850835   15236 round_trippers.go:415]     Content-Length: 608
+I1025 12:06:39.852801   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:40 GMT
+I1025 12:06:39.858777   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"certificates.k8s.io/v1beta1","resources":[{"name":"certificatesigningrequests","singularName":"","namespaced":false,"kind":"CertificateSigningRequest","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["csr"]},{"name":"certificatesigningrequests/approval","singularName":"","namespaced":false,"kind":"CertificateSigningRequest","verbs":["update"]},{"name":"certificatesigningrequests/status","singularName":"","namespaced":false,"kind":"CertificateSigningRequest","verbs":["get","patch","update"]}]}
+I1025 12:06:39.871743   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/networking.k8s.io/v1
+I1025 12:06:39.871743   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:39.882761   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:39.887707   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:39.899823   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:40.034318   15236 round_trippers.go:409] Response Status: 200 OK in 129 milliseconds
+I1025 12:06:40.034318   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:40.037308   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:40 GMT
+I1025 12:06:40.041347   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:40.043291   15236 round_trippers.go:415]     Content-Length: 292
+I1025 12:06:40.048318   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"networking.k8s.io/v1","resources":[{"name":"networkpolicies","singularName":"","namespaced":true,"kind":"NetworkPolicy","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["netpol"]}]}
+I1025 12:06:40.063281   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/policy/v1beta1
+I1025 12:06:40.063281   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:40.065241   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:40.068382   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:40.073321   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:40.211542   15236 round_trippers.go:409] Response Status: 200 OK in 136 milliseconds
+I1025 12:06:40.212557   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:40.215542   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:40 GMT
+I1025 12:06:40.219532   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:40.221526   15236 round_trippers.go:415]     Content-Length: 632
+I1025 12:06:40.226514   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"policy/v1beta1","resources":[{"name":"poddisruptionbudgets","singularName":"","namespaced":true,"kind":"PodDisruptionBudget","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["pdb"]},{"name":"poddisruptionbudgets/status","singularName":"","namespaced":true,"kind":"PodDisruptionBudget","verbs":["get","patch","update"]},{"name":"podsecuritypolicies","singularName":"","namespaced":false,"kind":"PodSecurityPolicy","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["psp"]}]}
+I1025 12:06:40.240485   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/rbac.authorization.k8s.io/v1
+I1025 12:06:40.240485   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:40.242477   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:40.250448   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:40.258431   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:40.398148   15236 round_trippers.go:409] Response Status: 200 OK in 138 milliseconds
+I1025 12:06:40.399099   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:40.402089   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:40.406114   15236 round_trippers.go:415]     Content-Length: 771
+I1025 12:06:40.408073   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:40 GMT
+I1025 12:06:40.414058   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"rbac.authorization.k8s.io/v1","resources":[{"name":"clusterrolebindings","singularName":"","namespaced":false,"kind":"ClusterRoleBinding","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"clusterroles","singularName":"","namespaced":false,"kind":"ClusterRole","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"rolebindings","singularName":"","namespaced":true,"kind":"RoleBinding","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"roles","singularName":"","namespaced":true,"kind":"Role","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]}]}
+I1025 12:06:40.428064   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/rbac.authorization.k8s.io/v1beta1
+I1025 12:06:40.428064   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:40.429029   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:40.435023   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:40.436001   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:40.581960   15236 round_trippers.go:409] Response Status: 200 OK in 132 milliseconds
+I1025 12:06:40.582977   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:40.585965   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:40.589946   15236 round_trippers.go:415]     Content-Length: 776
+I1025 12:06:40.591945   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:41 GMT
+I1025 12:06:40.596928   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"rbac.authorization.k8s.io/v1beta1","resources":[{"name":"clusterrolebindings","singularName":"","namespaced":false,"kind":"ClusterRoleBinding","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"clusterroles","singularName":"","namespaced":false,"kind":"ClusterRole","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"rolebindings","singularName":"","namespaced":true,"kind":"RoleBinding","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"roles","singularName":"","namespaced":true,"kind":"Role","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]}]}
+I1025 12:06:40.609894   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/storage.k8s.io/v1
+I1025 12:06:40.610899   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:40.617024   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:40.618980   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:40.619983   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:40.760312   15236 round_trippers.go:409] Response Status: 200 OK in 134 milliseconds
+I1025 12:06:40.760312   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:40.763269   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:40.768250   15236 round_trippers.go:415]     Content-Length: 284
+I1025 12:06:40.769247   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:41 GMT
+I1025 12:06:40.775233   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"storage.k8s.io/v1","resources":[{"name":"storageclasses","singularName":"","namespaced":false,"kind":"StorageClass","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["sc"]}]}
+I1025 12:06:40.787207   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/storage.k8s.io/v1beta1
+I1025 12:06:40.787207   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:40.792189   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:40.793184   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:40.800209   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:40.940389   15236 round_trippers.go:409] Response Status: 200 OK in 137 milliseconds
+I1025 12:06:40.940389   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:40.943370   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:40.947406   15236 round_trippers.go:415]     Content-Length: 466
+I1025 12:06:40.949392   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:41 GMT
+I1025 12:06:40.955347   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"storage.k8s.io/v1beta1","resources":[{"name":"storageclasses","singularName":"","namespaced":false,"kind":"StorageClass","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["sc"]},{"name":"volumeattachments","singularName":"","namespaced":false,"kind":"VolumeAttachment","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]}]}
+I1025 12:06:40.970337   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/admissionregistration.k8s.io/v1beta1
+I1025 12:06:40.970337   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:40.977278   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:40.978277   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:40.986304   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:41.139620   15236 round_trippers.go:409] Response Status: 200 OK in 139 milliseconds
+I1025 12:06:41.139620   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:41.142613   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:41.147604   15236 round_trippers.go:415]     Content-Length: 519
+I1025 12:06:41.148603   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:41 GMT
+I1025 12:06:41.157571   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"admissionregistration.k8s.io/v1beta1","resources":[{"name":"mutatingwebhookconfigurations","singularName":"","namespaced":false,"kind":"MutatingWebhookConfiguration","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]},{"name":"validatingwebhookconfigurations","singularName":"","namespaced":false,"kind":"ValidatingWebhookConfiguration","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]}]}
+I1025 12:06:41.172568   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/admissionregistration.k8s.io/v1alpha1
+I1025 12:06:41.172568   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:41.174599   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:41.178639   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:41.186581   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:41.320383   15236 round_trippers.go:409] Response Status: 200 OK in 131 milliseconds
+I1025 12:06:41.321391   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:41.324379   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:41.328473   15236 round_trippers.go:415]     Content-Length: 307
+I1025 12:06:41.330474   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:41 GMT
+I1025 12:06:41.334468   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"admissionregistration.k8s.io/v1alpha1","resources":[{"name":"initializerconfigurations","singularName":"","namespaced":false,"kind":"InitializerConfiguration","verbs":["create","delete","deletecollection","get","list","patch","update","watch"]}]}
+I1025 12:06:41.348430   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/apiextensions.k8s.io/v1beta1
+I1025 12:06:41.349433   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:41.350465   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:41.354411   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:41.356405   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:41.498375   15236 round_trippers.go:409] Response Status: 200 OK in 136 milliseconds
+I1025 12:06:41.499299   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:41.502288   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:41.506278   15236 round_trippers.go:415]     Content-Length: 474
+I1025 12:06:41.508277   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:42 GMT
+I1025 12:06:41.513271   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"apiextensions.k8s.io/v1beta1","resources":[{"name":"customresourcedefinitions","singularName":"","namespaced":false,"kind":"CustomResourceDefinition","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["crd","crds"]},{"name":"customresourcedefinitions/status","singularName":"","namespaced":false,"kind":"CustomResourceDefinition","verbs":["get","patch","update"]}]}
+I1025 12:06:41.526226   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/scheduling.k8s.io/v1beta1
+I1025 12:06:41.526226   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:41.528221   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:41.537195   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:41.542187   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:41.678067   15236 round_trippers.go:409] Response Status: 200 OK in 134 milliseconds
+I1025 12:06:41.679088   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:41.682075   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:41.686197   15236 round_trippers.go:415]     Content-Length: 294
+I1025 12:06:41.688159   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:42 GMT
+I1025 12:06:41.695135   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"scheduling.k8s.io/v1beta1","resources":[{"name":"priorityclasses","singularName":"","namespaced":false,"kind":"PriorityClass","verbs":["create","delete","deletecollection","get","list","patch","update","watch"],"shortNames":["pc"]}]}
+I1025 12:06:41.708139   15236 round_trippers.go:384] GET https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/metrics.k8s.io/v1beta1
+I1025 12:06:41.709098   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:41.710096   15236 round_trippers.go:394]     Accept: application/json, */*
+I1025 12:06:41.717076   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:41.725074   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:41.868490   15236 round_trippers.go:409] Response Status: 200 OK in 142 milliseconds
+I1025 12:06:41.868490   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:41.875429   15236 round_trippers.go:415]     Content-Length: 292
+I1025 12:06:41.877425   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:41.878421   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:42 GMT
+I1025 12:06:41.883418   15236 request.go:874] Response Body: {"kind":"APIResourceList","apiVersion":"v1","groupVersion":"metrics.k8s.io/v1beta1","resources":[{"name":"nodes","singularName":"","namespaced":false,"kind":"NodeMetrics","verbs":["get","list"]},{"name":"pods","singularName":"","namespaced":true,"kind":"PodMetrics","verbs":["get","list"]}]}
+I1025 12:06:41.921306   15236 request.go:874] Request Body: {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"name":"minecraft-server-teste2","namespace":"default"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"minecraft-server-teste2"}},"template":{"metadata":{"labels":{"app":"minecraft-server-teste2"}},"spec":{"containers":[{"env":[{"name":"EULA","value":"TRUE"}],"image":"openhack/minecraft-server:2.0","name":"minecraft-server-teste2","ports":[{"containerPort":25565,"name":"game"},{"containerPort":25575,"name":"rcon"}],"volumeMounts":[{"mountPath":"/data","name":"server-state"}]}],"volumes":[{"azureDisk":{"diskName":"aks-agentpool-34368300-0_OsDisk_1_694332f186eb424b823af2af93f56d54","diskURI":"/subscriptions/5d7b0295-dbd9-4b0c-8c58-8beb10ae7144/resourceGroups/MC_OPENHACKTEAM1_CLUSTER-KUBERNETES-TEAM1_EASTUS/providers/Microsoft.Compute/disks/aks-agentpool-34368300-0_OsDisk_1_694332f186eb424b823af2af93f56d54","kind":"Managed"},"name":"server-state"}]}}}}
+I1025 12:06:41.922307   15236 round_trippers.go:384] POST https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/apis/apps/v1/namespaces/default/deployments
+I1025 12:06:41.925294   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:41.933484   15236 round_trippers.go:394]     Content-Type: application/json
+I1025 12:06:41.934478   15236 round_trippers.go:394]     Accept: application/json
+I1025 12:06:41.936475   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:41.936475   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:42.117223   15236 round_trippers.go:409] Response Status: 201 Created in 168 milliseconds
+I1025 12:06:42.118185   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:42.119182   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:42.124280   15236 round_trippers.go:415]     Content-Length: 1692
+I1025 12:06:42.124280   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:42 GMT
+I1025 12:06:42.125277   15236 request.go:874] Response Body: {"kind":"Deployment","apiVersion":"apps/v1","metadata":{"name":"minecraft-server-teste2","namespace":"default","selfLink":"/apis/apps/v1/namespaces/default/deployments/minecraft-server-teste2","uid":"94ec1379-d867-11e8-9d87-0a58ac1f0fae","resourceVersion":"131891","generation":1,"creationTimestamp":"2018-10-25T15:06:42Z"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"minecraft-server-teste2"}},"template":{"metadata":{"creationTimestamp":null,"labels":{"app":"minecraft-server-teste2"}},"spec":{"volumes":[{"name":"server-state","azureDisk":{"diskName":"aks-agentpool-34368300-0_OsDisk_1_694332f186eb424b823af2af93f56d54","diskURI":"/subscriptions/5d7b0295-dbd9-4b0c-8c58-8beb10ae7144/resourceGroups/MC_OPENHACKTEAM1_CLUSTER-KUBERNETES-TEAM1_EASTUS/providers/Microsoft.Compute/disks/aks-agentpool-34368300-0_OsDisk_1_694332f186eb424b823af2af93f56d54","cachingMode":"ReadWrite","fsType":"ext4","readOnly":false,"kind":"Managed"}}],"containers":[{"name":"minecraft-server-teste2","image":"openhack/minecraft-server [truncated 668 chars]
+deployment.apps "minecraft-server-teste2" created
+I1025 12:06:42.128272   15236 request.go:874] Request Body: {"apiVersion":"v1","kind":"Service","metadata":{"name":"minecraft-server-lb-teste2","namespace":"default"},"spec":{"ports":[{"name":"game","port":25565,"protocol":"TCP","targetPort":25565},{"name":"rcon","port":25575,"protocol":"TCP","targetPort":25575}],"selector":{"app":"minecraft-server-teste2"},"type":"LoadBalancer"}}
+I1025 12:06:42.131264   15236 round_trippers.go:384] POST https://team1-f86b34ad.hcp.eastus.azmk8s.io:443/api/v1/namespaces/default/services
+I1025 12:06:42.134253   15236 round_trippers.go:391] Request Headers:
+I1025 12:06:42.135301   15236 round_trippers.go:394]     Authorization: Bearer 461316bf132e9c32ef4e9c1deb89b9cf
+I1025 12:06:42.135301   15236 round_trippers.go:394]     Content-Type: application/json
+I1025 12:06:42.136303   15236 round_trippers.go:394]     Accept: application/json
+I1025 12:06:42.137302   15236 round_trippers.go:394]     User-Agent: kubectl/v1.10.7 (windows/amd64) kubernetes/0c38c36
+I1025 12:06:42.382765   15236 round_trippers.go:409] Response Status: 201 Created in 244 milliseconds
+I1025 12:06:42.383689   15236 round_trippers.go:412] Response Headers:
+I1025 12:06:42.386680   15236 round_trippers.go:415]     Content-Type: application/json
+I1025 12:06:42.390721   15236 round_trippers.go:415]     Content-Length: 663
+I1025 12:06:42.392663   15236 round_trippers.go:415]     Date: Thu, 25 Oct 2018 15:06:42 GMT
+I1025 12:06:42.393661   15236 request.go:874] Response Body: {"kind":"Service","apiVersion":"v1","metadata":{"name":"minecraft-server-lb-teste2","namespace":"default","selfLink":"/api/v1/namespaces/default/services/minecraft-server-lb-teste2","uid":"9511eee6-d867-11e8-9d87-0a58ac1f0fae","resourceVersion":"131898","creationTimestamp":"2018-10-25T15:06:42Z"},"spec":{"ports":[{"name":"game","protocol":"TCP","port":25565,"targetPort":25565,"nodePort":30866},{"name":"rcon","protocol":"TCP","port":25575,"targetPort":25575,"nodePort":31877}],"selector":{"app":"minecraft-server-teste2"},"clusterIP":"10.0.232.61","type":"LoadBalancer","sessionAffinity":"None","externalTrafficPolicy":"Cluster"},"status":{"loadBalancer":{}}}
+service "minecraft-server-lb-teste2" created
