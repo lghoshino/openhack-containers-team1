@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: minecraft-server
+ name: minecraft-server-teste2
 spec:
  replicas: 1
  selector:
    matchLabels:
-     app: minecraft-server
+     app: minecraft-server-teste2
  template:
    metadata:
      labels:
-       app: minecraft-server
+       app: minecraft-server-teste2
    spec:
      containers:
-     - name: minecraft-server
+     - name: minecraft-server-teste2
        image: openhack/minecraft-server:2.0
        env:
        - name: EULA
@@ -21,22 +21,21 @@ spec:
        volumeMounts:
        - mountPath: /data
          name: server-state
+         subPath: minecraft-server-teste2
        ports:
        - containerPort: 25565
          name: game
        - containerPort: 25575
          name: rcon
      volumes:
-     - name: server-state
-       azureDisk:
-         kind: Managed
-         diskName: aks-agentpool-34368300-0_OsDisk_1_694332f186eb424b823af2af93f56d54
-         diskURI: /subscriptions/5d7b0295-dbd9-4b0c-8c58-8beb10ae7144/resourceGroups/MC_OPENHACKTEAM1_CLUSTER-KUBERNETES-TEAM1_EASTUS/providers/Microsoft.Compute/disks/aks-agentpool-34368300-0_OsDisk_1_694332f186eb424b823af2af93f56d54
+       - name: server-state
+         persistentVolumeClaim:
+            claimName: azurefile
 ---
 apiVersion: v1
 kind: Service
 metadata:
- name: minecraft-server-lb
+ name: minecraft-server-lb-teste2
 spec:
  type: LoadBalancer
  ports:
@@ -49,4 +48,4 @@ spec:
    targetPort: 25575
    name: rcon
  selector:
-   app: minecraft-server
+   app: minecraft-server-teste2
